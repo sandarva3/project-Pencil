@@ -8,7 +8,7 @@ other features to it that mightbe useful to me.I added some features.
 project-Pencil is a versatile web application that offers multiple useful features for users. 
 It was initially created to address the need for a reliable image compressor but later included several other applications to make various tasks more convenient.<br>
 The site is live here: https://propen.pythonanywhere.com/  <br>
-But you can't use the features of YouTube because the server on which the site is deployed won't support YouTube API. To use them you need to run the project on local server.
+But you can't use the features of YouTube because the freeplan of server on which the site is deployed won't support YouTube API. To use them you need to run the project on local server.
 
 
 ## Features

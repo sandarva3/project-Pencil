@@ -41,8 +41,8 @@ But you can't use the features of YouTube because the freeplan of server on whic
 
 To run project-Pencil on your local machine, follow these steps:
 
-1. Clone this repository: `https://github.com/sandarva3/project-Pencil.git`
-2. Install the required dependencies from requirements.txt file above. While building this project, I experimented with a lot of packages and libraries.
+1. Clone this repository: `git clone https://github.com/sandarva3/project-Pencil.git`
+2. Install the required dependencies from requirements.txt file above. Using pip `pip install -r requirements.txt` . While building this project, I experimented with a lot of packages and libraries.
    So there are some packages that aren't used on the project.
 3. Run the application.
 4. Access the application through the browser at `http://localhost:(your port number)`

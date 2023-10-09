@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block head_content %}
+    
+    {% endblock head_content %}
+    <style>
+        .nav_body{
+            background-color: rgb(213, 227, 227)
+        }
+        
+        .nav_body > ul.navbar3 {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid rgb(18, 147, 147);
+            padding: 20px;
+        }
+
+        .nav_body > ul.navbar3 li {
+            flex-grow: 1;
+            text-align: center;
+        }
+
+        .nav_body > ul.navbar3 li:first-child,
+        .nav_body > ul.navbar3 li:last-child {
+            flex-grow: 0;
+            text-align: left;  /* For the first link */
+        }
+
+        .nav_body > ul.navbar3 li:last-child {
+            text-align: right;  /* For the last link */
+        }
+
+        .navlink{
+            display: block;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+    </style>
+    {% block extra_head %}
+    {% endblock extra_head %}
+</head>
+
+<body class="nav_body">
+
+    <ul class="navbar3">
+        <li><a href="{% url 'ytpage' %}" class="navlink">Youtube Video Downloader</a></li>
+        <li><a href="{% url 'audio' %}" class="navlink">Youtube Audio Downloader</a></li>
+        <li><a href="{% url 'file' %}" class="navlink">File Converter</a></li>
+        <li><a href="{% url 'image' %}" class="navlink">Image Compressor</a></li>
+    </ul>
+
+    {% block content %}
+    {% endblock content %}
+
+</body>
+
+</html>

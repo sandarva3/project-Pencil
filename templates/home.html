@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<link rel="stylesheet" href="{% static 'home.css' %}">
+    <div class="container">
+
+        <div class="leftSide">
+            <div class="youtubeVideo">
+                <a href="{% url 'ytpage' %}">
+                    <img src="{% static 'youtubeVideo.png' %}" title="Download youtbe videos" width="78%">
+                </a>
+            </div>
+
+            <div class="fileConvert">
+                <a href="{% url 'file' %}">
+                    <img src="{% static 'FileConvert.png' %}" title="Convert file from one type to another" width="78%">
+                </a>
+            </div>
+        </div>
+
+        
+        <div class="rightSide">
+            <div class="youtubeAudio">
+                <a href="{% url 'audio' %}">
+                    <img src="{% static 'youtubeAudio.png' %}" title="Download the Music/Audio only from youtube video" width="75%">
+                </a>
+            </div>
+
+            <div class="imageCompress">
+                <a href="{% url 'image' %}">
+                    <img src="{% static 'ImageCompress.png' %}" title="Compress Images without losing quality" width="75%">
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+{% endblock content %}

@@ -1,0 +1,30 @@
+{% extends 'base.html' %} {% load static %} {% block head_content %}
+<title>Youtube Audio Downloader</title>
+<link rel="stylesheet" href="{% static 'audio/audio.css' %}" />
+{% endblock head_content %} {% block content %}
+<div class="audio_wrapper">
+  <div class="container">
+    <img src="{% static 'audio/YoutubeLogo.png' %}" alt="youtubeLogo" />
+    <br />
+    <form method="post">
+      {% csrf_token %}
+      <h1>Youtube Audio Downloader</h1>
+      <br />
+      <input required type="text" id="link" name="link" placeholder="Enter Audio URL here"
+        title="Enter your URL here" />
+      <br /><br /><br />
+      <input type="submit" title="Continue to download" value="Proceed" style="margin-left: 15px; margin-bottom: 15px;"  />
+    </form>
+    <hr>
+    <br>
+    {% if status == 'success' %}
+    <img src="{{thumbnail}}" alt="Video thumbnail" title="video thumbnail">
+    <h4 title="video title">{{title}}</h4>
+    <a href="{% url 'audio_download' %}?filename={{filename}}" class="btn btn-primary">Download Audio version</a>
+    {% endif %}
+
+    <p class="msg1" id="msg1">{{msg1}}</p>
+    <p class="msg2" id="msg2">{{msg2}}</p>
+  </div>
+</div>
+{% endblock content %}

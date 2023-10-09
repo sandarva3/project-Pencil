@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block head_content %}
+
+  <title>Youtube Video Downloader</title>
+  <link rel="stylesheet" href="{% static 'youtube/youtube.css' %}">
+
+{% endblock head_content %}
+
+{% block content %}
+<div class="youtube_wrapper">
+  <div class="container">
+    <img src="{% static 'youtube/YoutubeLogo.png' %}" alt="youtubeLogo" />
+    <br>
+    <form method="post">
+      {% csrf_token %}
+      <h1>Youtube video Downloader</h1>
+      <br>
+      <input required type="text" id="link" name="link" placeholder="Enter video url here"
+        title="Enter your url here" />
+      <br><br><br>
+      <input type="submit" title="Continue to download" value="Proceed" style="margin-left: 15px; margin-bottom: 15px;" />
+    </form>
+    {% if resolutions %}
+    <form method="get">
+      <hr>
+      <h4 title="video title">{{title}}</h4>
+      <img src="{{thumbnail}}" alt="video thumbnail" title="video thumbnail">
+      <br>
+      <div style="display: flex; align-items: center; margin: 15px;">
+        <p style="font-size: 25px; margin: 0;">Select Resolution:</p>
+        <select name="resolution" id="resolution" style="margin-left: 15px;">
+          {% for res in resolutions %}
+          <option value="{{ res }}">{{ res }}</option>
+          {% endfor %}
+        </select>
+      </div>
+      <input type="hidden" name="link" id="hidden_link" value="{{ link }}" />
+      <input type="submit" title="generate link" value="Generate link" style="margin-left: 15px;" />
+    </form>
+    {% endif %}
+    <p id="wait"></p>
+    <p class="msg1" id="msg1">{{msg1}}</p>
+    <p class="msg2" id="msg2"></p>
+    <a id="download-link" href="#" style="display:none;" title="download to your device" download>Download</a>
+  </div>
+</div>
+  <script type="text/javascript" src="{% static 'youtube/youtube.js' %}"></script>
+
+
+{% endblock content %}

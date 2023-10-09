@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block head_content %}
+<title>File Converter</title>
+<link rel="stylesheet" href="{% static 'fileapp/fileapp.css' %}">
+{% endblock head_content %}
+
+{% block content %}
+
+
+<h1 class="title">File Converter</h1>
+    <div class="container">
+        <form id="converter-form" method="post" enctype="multipart/form-data" action="{% url 'file' %}">
+            {% csrf_token %}
+            <label for="from-format">Convert from:</label>
+            <select required id="from-format" name="from-format" title="select what your current file format is">
+                <option value="pdf">PDF</option>
+                <option value="txt">TXT</option>
+                <option value="png">PNG</option>
+                <option value="jpeg">JPEG/JPG</option>
+            </select>
+
+            <label for="to-format">Convert to:</label>
+            <select required id="to-format" name="to-format" title="select what you want your file fomat to be">
+                <option value="pdf" id="pdf">PDF</option>
+                <option value="txt" id="txt">TXT</option>
+                <option value="png" id="png">PNG</option>
+                <option value="jpeg" id="jpg">JPEG/JPG</option>
+                <option value="epub" id="epub">EPUB</option>
+            </select>
+            <br>
+            <input required type="file" name="file-input" title="Choose your file" id="file-input" accept=".pdf, .txt, .png, .jpeg" />
+            <br><br><br>
+            <button type="submit" title="convert" id="convert-btn">Convert</button>
+        </form>
+        <div id="output"></div>
+        <p style="color: red;">{{error}}</p>
+    </div>
+
+    <script type="text/javascript" src="{% static 'fileapp/fileapp.js' %}"></script>
+
+    {% endblock content %}

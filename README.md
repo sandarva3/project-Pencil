@@ -15,18 +15,19 @@ But you can't use the features of YouTube because the server on which the site i
 
 ### 1) File Conversion
 
-- **Supported Formats:** project-Pencil can convert files and images from one format to another. It works with various formats like PDF, TXT, JPEG/JPG, PNG, and  EPUB.
+- **Supported Formats:** It can convert files and images from one format to another. It works with various formats like PDF, TXT, JPEG/JPG, PNG, and  EPUB.
   You can convert files from one format to another and download them.
 
 ### 2) Image Compressor
 
 - **Outstanding Compression:** The image compressor in project-Pencil delivers outstanding results, ensuring that the compressed image remains virtually indistinguishable from the original.
-  The differences in size will be enormous while the resulting quality will be indistinguishable. I use this app in daily life and will continue to use it whenever there's a need.
+  The differences in size will be enormous while the resulting quality will be indistinguishable. There are other sites that compress images but they are filled with ads. It's clean and smooth.
+  I use this app in daily life and will continue to use it whenever there's a need.
 
 ### 3) YouTube Video Downloader
 
 - **Any Resolution:** There are other sites where you can download YouTube videos by pasting a link, but almost all of them only allow to download up to 1080P.
-  It's not some mediocre application that directly downloads the available video with audio integrated with it(which only enables us to download 720P and 360P only).
+  It's not some mediocre application that directly downloads the available video with audio integrated with it(which enables us to download 720P and 360P only).
   YouTube separates audio and video streams, so it uses FFmpeg to download the audio and video separately and merge them.
   Users can download YouTube videos by simply pasting the URL. It supports video downloads in any resolution, including 4K and 8K, providing more options than other sites.
   And the download speed will be superfast.
@@ -59,7 +60,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 
 ## Acknowledgments
-There are people who poured their time and effort for creating and developing things that are very helpful for many of us. I am really thankful for them.
+There are people who poured their time and effort for creating and developing things that are very helpful to many of us. I am really thankful for them.
 
 - The open-source community of people for providing libraries and tools used in this project.
 - The people who made the necessary resources available for learning.

@@ -48,6 +48,7 @@ To run project-Pencil on your local machine, follow these steps:
 4. Access the application through the browser at `http://localhost:(your port number)`
 <br>
 This web application uses FFmpeg. so you need to:
+<br>
 ```diff
 - Download the compiled version of FFmpeg.
 - Add FFmpeg to your user PATH environment variable.

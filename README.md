@@ -1,3 +1,4 @@
+
 # project-Pencil
 why Pencil? While I was starting this project there was a pencil on my side, so I just named the project Pencil. That's it.
 
@@ -27,7 +28,7 @@ But you can't use the features of YouTube because the freeplan of server on whic
 ### 3) YouTube Video Downloader
 
 - **Any Resolution:** There are other sites where you can download YouTube videos by pasting a link, but almost all of them only allow to download up to 1080P.
-  It's not some mediocre application that directly downloads the available video with audio integrated with it(which enables us to download 720P and 360P only).
+  It's doesn't only directly downloads the available video with audio integrated with it(which enables us to download 720P and 360P only).
   YouTube separates audio and video streams, so it downloads the audio and video separately and merges them using FFmpeg.
   Users can download YouTube videos by simply pasting the URL. It supports video downloads in any resolution, including 4K and 8K, providing more options than other sites.
   And the download speed will be superfast.
@@ -72,7 +73,3 @@ There are people who poured their time and effort for creating and developing th
 
 - The open-source community of people for providing libraries and tools used in this project.
 - The people who made the necessary resources available for learning.
-
-
-
-   
